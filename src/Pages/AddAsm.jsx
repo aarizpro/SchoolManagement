@@ -13,7 +13,7 @@ const AddAsm = () => {
     const [filteredData,setFilteredData]=useState([]);
     const [students, setStudents] = useState([]);
     const [isAddModalOpen, setAddModalOpen] = useState(false);
-    const url ="http://localhost:5000/";
+    const url = "https://api-services-jg4f.onrender.com/";
     const fetchAsm = async () => {
         try {
             const response = await axios.get(`${url}api/asmfinder`);

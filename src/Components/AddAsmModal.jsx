@@ -12,11 +12,11 @@ const AddAsmModal = ({grade,subject,asmtype,closeModal}) => {
     const [file1, setFile1] = useState(null);
     
     const url1="https://awsupload.onrender.com/";
-    const url ="http://localhost:5000";
+    const url = "https://api-services-jg4f.onrender.com/";
 const AddData =async()=>{
 try {
     
-    const response = await axios.post(`${url}/api/asmfinder`,{
+    const response = await axios.post(`${url}api/asmfinder`,{
         Grade:grade,
         Subject:subject,
         AsmType:asmtype,
